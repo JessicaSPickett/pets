@@ -1,0 +1,144 @@
+body {
+  font-family: "Ariel";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  border: 2px solid blue;
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  transition: all 0.6s ease-out;
+}
+
+form {
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: left;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #374785;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #374785;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #2c3e50;
+  transform: scale(1.05);
+}
+
+.pet-card img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+  text-align: center;
+  margin: 15px 0;
+  transition: transform 0.2s ease;
+  background-color: #e0ecff;
+  border: 2px solid blue;
+}
+
+.pet-card:hover {
+  transform: scale(1.02);
+}
+.pet-card {
+  background-color: #e0ecff;
+  color: #24305e;
+  padding: 20px;
+  border: 2px solid #374785; /* Full card border */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+  text-align: center;
+  margin: 15px 0;
+  transition: transform 0.2s ease;
+}
+
+.pet-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Ombre effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s ease-out;
+}
+
+.pet-card:hover h3 {
+  transform: scale(1.05);
+  letter-spacing: 1px;
+}
+
+.pet-card p {
+  margin: 8px 0;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-card {
+  background-color: #e0ecff;
+  color: #24305e;
+  padding: 30px;
+  border: 2px solid #374785;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+  width: 400px;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  color: #24305e;
+}
+
+.form-card:hover {
+  transform: scale(1.02);
+}
+.form-card label,
+.form-card input,
+.form-card select {
+  color: #24305e;
+}

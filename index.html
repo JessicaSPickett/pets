@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>🐩Find Your Perfect Pet🐈</h1>
+    <div class="form-card">
+      <form id="petForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Your E-mail"
+          required
+        />
+
+        <label for="zipCode">Zip Code:</label>
+        <input
+          type="text"
+          id="zipCode"
+          placeholder="Enter Your Zip Code"
+          required
+        />
+
+        <label for="petType">Type of Pet:</label>
+        <select id="petType">
+          <option disabled selected>‼️Select Your Dream Pet‼️</option>
+          <option value="dog">🐩Dog</option>
+          <option value="cat">🐈Cat</option>
+          <option value="rabbit">🐇Rabbit</option>
+        </select>
+
+        <button type="submit">Find Pets</button>
+      </form>
+    </div>
+    <div id="petContainer"></div>
+    <script src="custom.js"></script>
+  </body>
+</html>
