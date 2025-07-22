@@ -15,6 +15,7 @@ h1 {
   font-weight: bold;
   background: linear-gradient(to right, #6a11cb, #2575fc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
   transition: all 0.6s ease-out;
@@ -106,6 +107,7 @@ button:hover {
   font-weight: bold;
   background: linear-gradient(to right, #6a11cb, #2575fc); /* Ombre effect */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.6s ease-out;
 }
@@ -119,6 +121,7 @@ button:hover {
   margin: 8px 0;
   background: linear-gradient(to right, #ff758c, #ff7eb3);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .form-card {

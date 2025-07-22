@@ -71,30 +71,26 @@ function handleFormSubmit(event) {
 function displayPetData(pets) {
   result.innerHTML = "<h2>Available Pets Near You:</h2>";
 
-  // if no pets found, display a message
-  if (pets === null || pets === undefined || pets.length === 0) {
-    result.innerHTML += "<p>No pets found for this  zip code! Try again!</p>";
+  // If no pets found, display a message
+  if (!pets || pets.length === 0) {
+    result.innerHTML += "<p>No pets found for this zip code! Try again!</p>";
     return;
   }
 
-  // loop through each pet and create a pet card
+  // Loop through each pet and create a pet card
   pets.forEach((pet) => {
     let petElement = document.createElement("div");
     petElement.classList.add("pet-card");
     petElement.innerHTML = `
-            <img src="${
-              pet.photos.length ? pet.photos[0].medium : "placeholder.jpg"
-            }" alt="${pet.name}">
-            <h3>${pet.name}</h3>
-            <p>Breed: ${pet.breeds.primary}</p>
-            <p>Age: ${pet.age}</p>
-            <p>Gender: ${pet.gender}</p>
-        `;
+      ${
+        Array.isArray(pet.photos) && pet.photos.length > 0
+          ? `<img src="${pet.photos[0].medium}" alt="${pet.name}">`
+          : `<p>No photo available</p>`
+      }
+      <p>Breed: ${pet.breeds.primary}</p>
+      <p>Age: ${pet.age}</p>
+      <p>Gender: ${pet.gender}</p>
+    `;
     result.appendChild(petElement);
   });
-}
-
-// added showError to display error message
-function showError(message) {
-  result.innerHTML = `<p>${message}</p>`;
 }
